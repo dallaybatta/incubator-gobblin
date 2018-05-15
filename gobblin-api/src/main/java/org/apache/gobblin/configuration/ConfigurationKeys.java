@@ -117,6 +117,9 @@ public class ConfigurationKeys {
   public static final String HELIX_JOB_TIMEOUT_SECONDS = "job.timeout.seconds";
   public static final String DEFAULT_HELIX_JOB_TIMEOUT_SECONDS = "10800";
 
+  public static final String HELIX_TASK_TIMEOUT_SECONDS = "task.timeout.seconds";
+  public static final long DEFAULT_HELIX_TASK_TIMEOUT_SECONDS = 60 * 60;
+
   /**
    * Task executor and state tracker configuration properties.
    */
@@ -246,6 +249,7 @@ public class ConfigurationKeys {
    */
   // This property is used to specify the URN of a dataset a job or WorkUnit extracts data for
   public static final String DATASET_URN_KEY = "dataset.urn";
+  public static final String GLOBAL_WATERMARK_DATASET_URN="__globalDatasetWatermark";
   public static final String DEFAULT_DATASET_URN = "";
 
   /**
